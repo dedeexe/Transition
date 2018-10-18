@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CyberPunkGuide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VyY-wr-kgj">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background4" translatesAutoresizingMaskIntoConstraints="NO" id="8Ms-bZ-IGE">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="8Ms-bZ-IGE" firstAttribute="leading" secondItem="VyY-wr-kgj" secondAttribute="leading" id="Cmx-od-1DF"/>
+                                    <constraint firstAttribute="bottom" secondItem="8Ms-bZ-IGE" secondAttribute="bottom" id="gkN-ET-O74"/>
+                                    <constraint firstItem="8Ms-bZ-IGE" firstAttribute="top" secondItem="VyY-wr-kgj" secondAttribute="top" id="hxB-aB-MRs"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Ms-bZ-IGE" secondAttribute="trailing" id="mMz-Vm-eQv"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5I-Ii-Oky">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CW5-Q7-Ecw" customClass="ArtScrollView" customModule="CyberPunkGuide" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="447" width="375" height="180"/>
+                                        <color key="backgroundColor" white="0.79893973210000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="5rQ-pg-kvH"/>
+                                        </constraints>
+                                    </scrollView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cyberpunk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Xz-HH-2k1">
+                                        <rect key="frame" x="20" y="70" width="335" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="KL1-Fo-wJL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d31-0m-PEr">
+                                        <rect key="frame" x="20" y="120" width="335" height="307"/>
+                                        <mutableString key="text">Cyberpunk (de Cyber(netic) + punk)[1] é um subgênero alternativo de ficção científica, conhecido por seu enfoque de "Alta tecnologia e baixa qualidade de vida" ("High tech, Low life") e toma seu nome da combinação de cibernética e punk alternativo.[2] Mescla ciência avançada, como as tecnologias de informação e a cibernética junto com algum grau de desintegração ou mudança radical no sistema civil vigente.[3] O termo foi criado em 1980, pelo escritor Bruce Bethke, para o seu conto "Cyberpunk", que entretanto só seria publicada em novembro de 1983, em Amazing Science Fiction Stories, Volume 57, Número 4.</mutableString>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.052761501736111112" green="0.1633572048611111" blue="0.15931532118055555" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="d31-0m-PEr" firstAttribute="top" secondItem="3Xz-HH-2k1" secondAttribute="bottom" constant="20" id="3z4-vB-AQg"/>
+                                    <constraint firstItem="CW5-Q7-Ecw" firstAttribute="leading" secondItem="S5I-Ii-Oky" secondAttribute="leading" id="5Gf-9e-WHX"/>
+                                    <constraint firstItem="CW5-Q7-Ecw" firstAttribute="top" secondItem="d31-0m-PEr" secondAttribute="bottom" constant="20" id="SoK-IC-Si8"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Xz-HH-2k1" secondAttribute="trailing" constant="20" id="WfN-7l-vDt"/>
+                                    <constraint firstAttribute="bottom" secondItem="CW5-Q7-Ecw" secondAttribute="bottom" constant="20" id="XGE-LF-V2b"/>
+                                    <constraint firstItem="3Xz-HH-2k1" firstAttribute="top" secondItem="S5I-Ii-Oky" secondAttribute="top" constant="70" id="gOb-YJ-MW9"/>
+                                    <constraint firstItem="d31-0m-PEr" firstAttribute="leading" secondItem="S5I-Ii-Oky" secondAttribute="leading" constant="20" id="h3o-vZ-k2T"/>
+                                    <constraint firstAttribute="trailing" secondItem="CW5-Q7-Ecw" secondAttribute="trailing" id="hbe-eR-aJy"/>
+                                    <constraint firstAttribute="trailing" secondItem="d31-0m-PEr" secondAttribute="trailing" constant="20" id="nKR-WG-KAE"/>
+                                    <constraint firstItem="3Xz-HH-2k1" firstAttribute="leading" secondItem="S5I-Ii-Oky" secondAttribute="leading" constant="20" id="rT9-8D-jtm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="S5I-Ii-Oky" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HQm-PH-ZHU"/>
+                            <constraint firstItem="VyY-wr-kgj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KuL-tS-gKh"/>
+                            <constraint firstItem="S5I-Ii-Oky" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Lxn-EE-qIF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="S5I-Ii-Oky" secondAttribute="bottom" id="TRm-ag-hxg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VyY-wr-kgj" secondAttribute="bottom" id="XGa-aS-zw0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S5I-Ii-Oky" secondAttribute="trailing" id="fJD-6z-sXD"/>
+                            <constraint firstItem="VyY-wr-kgj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="imU-uO-tOR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VyY-wr-kgj" secondAttribute="trailing" id="rgv-vC-J9j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="CW5-Q7-Ecw" id="CvI-Dx-om6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="26.53673163418291"/>
+        </scene>
+        <!--Art Detail View Controller-->
+        <scene sceneID="v0p-0b-Rf1">
+            <objects>
+                <viewController storyboardIdentifier="ArtDetailViewController" id="5bi-JF-qmm" customClass="ArtDetailViewController" customModule="CyberPunkGuide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PTI-7F-dNc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DYT-Pj-Aih">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xNU-cu-ECq">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hht-ff-AMv">
+                                        <rect key="frame" x="0.0" y="481" width="375" height="166"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moE-sM-6kQ">
+                                                <rect key="frame" x="20" y="40" width="335" height="29.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LiF-9R-6i0">
+                                                <rect key="frame" x="20" y="109.5" width="335" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="moE-sM-6kQ" secondAttribute="trailing" constant="20" id="6ZG-v1-IGs"/>
+                                            <constraint firstItem="LiF-9R-6i0" firstAttribute="leading" secondItem="Hht-ff-AMv" secondAttribute="leading" constant="20" id="IcM-Dc-gEQ"/>
+                                            <constraint firstItem="moE-sM-6kQ" firstAttribute="leading" secondItem="Hht-ff-AMv" secondAttribute="leading" constant="20" id="U17-XP-5oG"/>
+                                            <constraint firstItem="LiF-9R-6i0" firstAttribute="top" secondItem="moE-sM-6kQ" secondAttribute="bottom" constant="40" id="ULY-GD-eoL"/>
+                                            <constraint firstItem="moE-sM-6kQ" firstAttribute="top" secondItem="Hht-ff-AMv" secondAttribute="top" constant="40" id="lLS-Kr-rwZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="LiF-9R-6i0" secondAttribute="bottom" constant="40" id="rWY-A8-pIu"/>
+                                            <constraint firstAttribute="trailing" secondItem="LiF-9R-6i0" secondAttribute="trailing" constant="20" id="ssG-Sh-gSU"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Hht-ff-AMv" secondAttribute="bottom" id="97E-Lj-M23"/>
+                                    <constraint firstItem="xNU-cu-ECq" firstAttribute="top" secondItem="DYT-Pj-Aih" secondAttribute="top" id="9He-5d-MBO"/>
+                                    <constraint firstAttribute="bottom" secondItem="xNU-cu-ECq" secondAttribute="bottom" id="Mr6-kZ-CEF"/>
+                                    <constraint firstAttribute="trailing" secondItem="xNU-cu-ECq" secondAttribute="trailing" id="NbO-fM-njs"/>
+                                    <constraint firstItem="Hht-ff-AMv" firstAttribute="leading" secondItem="DYT-Pj-Aih" secondAttribute="leading" id="jp8-XP-hJo"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hht-ff-AMv" secondAttribute="trailing" id="vbj-An-cwL"/>
+                                    <constraint firstItem="xNU-cu-ECq" firstAttribute="leading" secondItem="DYT-Pj-Aih" secondAttribute="leading" id="zrL-TN-pJl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Auf-9Q-ojO" firstAttribute="bottom" secondItem="DYT-Pj-Aih" secondAttribute="bottom" id="MbL-2S-qcQ"/>
+                            <constraint firstItem="Auf-9Q-ojO" firstAttribute="trailing" secondItem="DYT-Pj-Aih" secondAttribute="trailing" id="O7x-Uh-IYO"/>
+                            <constraint firstItem="DYT-Pj-Aih" firstAttribute="leading" secondItem="Auf-9Q-ojO" secondAttribute="leading" id="RLF-Ya-aEI"/>
+                            <constraint firstItem="DYT-Pj-Aih" firstAttribute="top" secondItem="Auf-9Q-ojO" secondAttribute="top" id="kEd-HC-KUL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Auf-9Q-ojO"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="LiF-9R-6i0" id="Xtu-xu-S6e"/>
+                        <outlet property="imageView" destination="xNU-cu-ECq" id="wZS-Ot-eoF"/>
+                        <outlet property="titleLabel" destination="moE-sM-6kQ" id="hmd-lr-3ND"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6yU-iH-w9e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="783" y="27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background4" width="564" height="1129"/>
+    </resources>
+</document>
