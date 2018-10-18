@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var scrollView : ArtScrollView!
+    let fadeTransition = FadeAnimation()                    //Add the transition properties
 
     override var prefersStatusBarHidden: Bool {
         return true
@@ -31,10 +32,20 @@ class ViewController: UIViewController {
             }
             
             destail.art = artView.art
+            destail.transitioningDelegate = self                //Set the destination transition delegate
             self?.present(destail, animated: true, completion: nil)
-            
         }
     }
     
 }
 
+//MARK: - Transition Delegate
+extension ViewController : UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return fadeTransition
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return nil
+    }
+}

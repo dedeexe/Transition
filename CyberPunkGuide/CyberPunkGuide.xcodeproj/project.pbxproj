@@ -17,6 +17,7 @@
 		912A183C2177F927002E353E /* CyberArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A183B2177F927002E353E /* CyberArt.swift */; };
 		912A18402177FD6B002E353E /* ArtScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A183F2177FD6B002E353E /* ArtScrollView.swift */; };
 		912A184221782526002E353E /* ArtDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A184121782526002E353E /* ArtDetailViewController.swift */; };
+		912A184721783007002E353E /* FadeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A184621783007002E353E /* FadeAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		912A183B2177F927002E353E /* CyberArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyberArt.swift; sourceTree = "<group>"; };
 		912A183F2177FD6B002E353E /* ArtScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtScrollView.swift; sourceTree = "<group>"; };
 		912A184121782526002E353E /* ArtDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtDetailViewController.swift; sourceTree = "<group>"; };
+		912A184621783007002E353E /* FadeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		912A18222177F618002E353E /* CyberPunkGuide */ = {
 			isa = PBXGroup;
 			children = (
+				912A184521782FFC002E353E /* Transition */,
 				912A183A2177F90F002E353E /* Model */,
 				912A18352177F7A4002E353E /* View */,
 				912A18232177F618002E353E /* AppDelegate.swift */,
@@ -93,6 +96,14 @@
 				912A183B2177F927002E353E /* CyberArt.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		912A184521782FFC002E353E /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				912A184621783007002E353E /* FadeAnimation.swift */,
+			);
+			path = Transition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +183,7 @@
 				912A18372177F874002E353E /* ArtView.swift in Sources */,
 				912A18242177F618002E353E /* AppDelegate.swift in Sources */,
 				912A18402177FD6B002E353E /* ArtScrollView.swift in Sources */,
+				912A184721783007002E353E /* FadeAnimation.swift in Sources */,
 				912A184221782526002E353E /* ArtDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
