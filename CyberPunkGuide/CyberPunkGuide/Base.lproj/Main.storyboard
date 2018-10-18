@@ -53,7 +53,7 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d31-0m-PEr">
                                         <rect key="frame" x="20" y="120" width="335" height="307"/>
-                                        <mutableString key="text">Cyberpunk (de Cyber(netic) + punk)[1] é um subgênero alternativo de ficção científica, conhecido por seu enfoque de "Alta tecnologia e baixa qualidade de vida" ("High tech, Low life") e toma seu nome da combinação de cibernética e punk alternativo.[2] Mescla ciência avançada, como as tecnologias de informação e a cibernética junto com algum grau de desintegração ou mudança radical no sistema civil vigente.[3] O termo foi criado em 1980, pelo escritor Bruce Bethke, para o seu conto "Cyberpunk", que entretanto só seria publicada em novembro de 1983, em Amazing Science Fiction Stories, Volume 57, Número 4.</mutableString>
+                                        <string key="text">Cyberpunk (de Cyber(netic) + punk)[1] é um subgênero alternativo de ficção científica, conhecido por seu enfoque de "Alta tecnologia e baixa qualidade de vida" ("High tech, Low life") e toma seu nome da combinação de cibernética e punk alternativo.[2] Mescla ciência avançada, como as tecnologias de informação e a cibernética junto com algum grau de desintegração ou mudança radical no sistema civil vigente.[3] O termo foi criado em 1980, pelo escritor Bruce Bethke, para o seu conto "Cyberpunk", que entretanto só seria publicada em novembro de 1983, em Amazing Science Fiction Stories, Volume 57, Número 4.</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -106,7 +106,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DYT-Pj-Aih">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xNU-cu-ECq">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xNU-cu-ECq">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hht-ff-AMv">

@@ -19,6 +19,7 @@
 		912A184221782526002E353E /* ArtDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A184121782526002E353E /* ArtDetailViewController.swift */; };
 		912A184721783007002E353E /* FadeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A184621783007002E353E /* FadeAnimation.swift */; };
 		912A1849217885E9002E353E /* ScrollAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A1848217885E9002E353E /* ScrollAnimation.swift */; };
+		A8BE70022178F6C4006F7650 /* PopAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BE70012178F6C4006F7650 /* PopAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		912A184121782526002E353E /* ArtDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtDetailViewController.swift; sourceTree = "<group>"; };
 		912A184621783007002E353E /* FadeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeAnimation.swift; sourceTree = "<group>"; };
 		912A1848217885E9002E353E /* ScrollAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollAnimation.swift; sourceTree = "<group>"; };
+		A8BE70012178F6C4006F7650 /* PopAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				912A184621783007002E353E /* FadeAnimation.swift */,
 				912A1848217885E9002E353E /* ScrollAnimation.swift */,
+				A8BE70012178F6C4006F7650 /* PopAnimation.swift */,
 			);
 			path = Transition;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				912A18262177F619002E353E /* ViewController.swift in Sources */,
 				912A183C2177F927002E353E /* CyberArt.swift in Sources */,
 				912A18372177F874002E353E /* ArtView.swift in Sources */,
+				A8BE70022178F6C4006F7650 /* PopAnimation.swift in Sources */,
 				912A18242177F618002E353E /* AppDelegate.swift in Sources */,
 				912A1849217885E9002E353E /* ScrollAnimation.swift in Sources */,
 				912A18402177FD6B002E353E /* ArtScrollView.swift in Sources */,

@@ -40,8 +40,10 @@ class ArtScrollView: UIScrollView {
     }
     
     func update() {
-        let width = self.frame.size.height * 0.75
+        let size = UIScreen.main.bounds.size
+        let xScale = size.width / size.height
         let height = self.frame.height
+        let width = height * xScale
         
         let contentWidth = (width + padding) * CGFloat(self.subviews.count) + padding
         contentSize = CGSize(width: contentWidth, height: height)

@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var scrollView : ArtScrollView!
     let fadeTransition = FadeAnimation()                    //Add the transition properties
     let scrollTransition = ScrollAnimation()
+    let popTransition = PopAnimation()
+    
+    var selectedArtView : ArtView?
     
     override var prefersStatusBarHidden: Bool {
         return true
@@ -34,7 +37,15 @@ class ViewController: UIViewController {
             
             destail.art = artView.art
             destail.transitioningDelegate = self                //Set the destination transition delegate
+            
+            self?.popTransition.startingFrame = artView.superview?.convert(artView.frame, to: nil) ?? CGRect.zero
+            self?.selectedArtView = artView
+            self?.selectedArtView?.isHidden = true
             self?.present(destail, animated: true, completion: nil)
+        }
+        
+        popTransition.onFinishTransition = { [weak self] in
+            self?.selectedArtView?.isHidden = false
         }
     }
     
@@ -44,13 +55,15 @@ class ViewController: UIViewController {
 extension ViewController : UIViewControllerTransitioningDelegate {
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         //fadeTransition.advancing = true
-        scrollTransition.advancing = true
-        return scrollTransition
+        //scrollTransition.advancing = true
+        popTransition.advancing = true
+        return popTransition
     }
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         //fadeTransition.advancing = false
-        scrollTransition.advancing = false
-        return scrollTransition
+        //scrollTransition.advancing = false
+        popTransition.advancing = false
+        return popTransition
     }
 }
