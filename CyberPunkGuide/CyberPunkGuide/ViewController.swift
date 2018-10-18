@@ -42,10 +42,12 @@ class ViewController: UIViewController {
 //MARK: - Transition Delegate
 extension ViewController : UIViewControllerTransitioningDelegate {
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        fadeTransition.advancing = true
         return fadeTransition
     }
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return nil
+        fadeTransition.advancing = false
+        return fadeTransition
     }
 }
