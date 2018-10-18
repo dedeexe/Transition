@@ -49,7 +49,8 @@ extension ViewController : UIViewControllerTransitioningDelegate {
     }
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        fadeTransition.advancing = false
-        return fadeTransition
+        //fadeTransition.advancing = false
+        scrollTransition.advancing = false
+        return scrollTransition
     }
 }

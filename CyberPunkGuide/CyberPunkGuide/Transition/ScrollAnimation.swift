@@ -10,7 +10,8 @@ import UIKit
 
 class ScrollAnimation : NSObject, UIViewControllerAnimatedTransitioning {
     
-    let duration = 1.0
+    let duration = 0.8
+    var bounce = 0.7
     var advancing : Bool = true
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
@@ -27,15 +28,25 @@ class ScrollAnimation : NSObject, UIViewControllerAnimatedTransitioning {
         containerView.addSubview(destinationView)
         
         destinationView.frame.origin.y = containerView.frame.size.height
+        sourceView.frame = containerView.frame
+        
+        var offset = -containerView.frame.size.height
+        
+        if !advancing {
+            destinationView.frame.origin.y = -containerView.frame.size.height
+            offset = containerView.frame.size.height
+        }
+        
+        let dumping = min(max(0.1, bounce), 1.0) * duration
         
         UIView.animate(withDuration: duration,
                        delay: 0.0,
-                       usingSpringWithDamping: 0.4,
+                       usingSpringWithDamping: CGFloat(dumping),
                        initialSpringVelocity: 0.0,
                        options: .curveEaseOut,
                        animations: {
                             destinationView.frame.origin.y = 0
-                            sourceView.frame.origin.y = -containerView.frame.size.height
+                            sourceView.frame.origin.y = offset
                         },
                        completion: { _ in
                             transitionContext.completeTransition(true)
