@@ -18,6 +18,7 @@
 		912A18402177FD6B002E353E /* ArtScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A183F2177FD6B002E353E /* ArtScrollView.swift */; };
 		912A184221782526002E353E /* ArtDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A184121782526002E353E /* ArtDetailViewController.swift */; };
 		912A184721783007002E353E /* FadeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A184621783007002E353E /* FadeAnimation.swift */; };
+		912A1849217885E9002E353E /* ScrollAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A1848217885E9002E353E /* ScrollAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		912A183F2177FD6B002E353E /* ArtScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtScrollView.swift; sourceTree = "<group>"; };
 		912A184121782526002E353E /* ArtDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtDetailViewController.swift; sourceTree = "<group>"; };
 		912A184621783007002E353E /* FadeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeAnimation.swift; sourceTree = "<group>"; };
+		912A1848217885E9002E353E /* ScrollAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				912A184621783007002E353E /* FadeAnimation.swift */,
+				912A1848217885E9002E353E /* ScrollAnimation.swift */,
 			);
 			path = Transition;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				912A183C2177F927002E353E /* CyberArt.swift in Sources */,
 				912A18372177F874002E353E /* ArtView.swift in Sources */,
 				912A18242177F618002E353E /* AppDelegate.swift in Sources */,
+				912A1849217885E9002E353E /* ScrollAnimation.swift in Sources */,
 				912A18402177FD6B002E353E /* ArtScrollView.swift in Sources */,
 				912A184721783007002E353E /* FadeAnimation.swift in Sources */,
 				912A184221782526002E353E /* ArtDetailViewController.swift in Sources */,

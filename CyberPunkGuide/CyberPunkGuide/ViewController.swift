@@ -12,7 +12,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var scrollView : ArtScrollView!
     let fadeTransition = FadeAnimation()                    //Add the transition properties
-
+    let scrollTransition = ScrollAnimation()
+    
     override var prefersStatusBarHidden: Bool {
         return true
     }
@@ -42,8 +43,9 @@ class ViewController: UIViewController {
 //MARK: - Transition Delegate
 extension ViewController : UIViewControllerTransitioningDelegate {
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        fadeTransition.advancing = true
-        return fadeTransition
+        //fadeTransition.advancing = true
+        scrollTransition.advancing = true
+        return scrollTransition
     }
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
