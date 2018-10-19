@@ -35,7 +35,8 @@ class ArtDetailViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.dismiss(animated: true, completion: nil)
+        //self.dismiss(animated: true, completion: nil)
+        hideDescriptionView()
     }
     
     override var prefersStatusBarHidden: Bool {
@@ -50,10 +51,7 @@ class ArtDetailViewController: UIViewController {
     
     
     private func setupInitialPosition() {
-        let height = descriptionView.frame.size.height
         bottomConstraint.constant = -view.frame.height
-        titleLabel.alpha = 0.0
-        descriptionLabel.alpha = 0.0
         view.layoutIfNeeded()
     }
     
@@ -64,20 +62,20 @@ class ArtDetailViewController: UIViewController {
                             self?.bottomConstraint.constant = 0.0
                             self?.view.layoutIfNeeded()
                         },
-                       completion: {[weak self] _ in self?.showTexts() })
+                       completion: nil)
         
 
     }
     
-    
-    func showTexts() {
+    func hideDescriptionView() {
+        
         UIView.animate(withDuration: 0.4,
                        animations: { [weak self] in
-                            self?.titleLabel.alpha = 1.0
-                            self?.descriptionLabel.alpha = 1.0
+                            self?.setupInitialPosition()
                         },
-                       completion: nil)
+                       completion: { [weak self] _ in
+                            self?.dismiss(animated: true, completion: nil)
+                        })
     }
-    
     
 }

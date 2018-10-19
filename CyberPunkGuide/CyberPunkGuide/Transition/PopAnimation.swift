@@ -10,8 +10,8 @@ import UIKit
 
 class PopAnimation : NSObject, UIViewControllerAnimatedTransitioning {
     
-    let duration = 0.9
-    var bounce = 0.7
+    let duration = 0.75
+    var bounce = 0.8
     var advancing = true
     var startingFrame = CGRect.zero
     

@@ -34,14 +34,14 @@ class ViewController: UIViewController {
             guard let destail = self?.storyboard?.instantiateViewController(withIdentifier: "ArtDetailViewController") as? ArtDetailViewController else {
                 fatalError()
             }
-            
-            destail.art = artView.art
-            destail.transitioningDelegate = self                //Set the destination transition delegate
-            
+
             self?.popTransition.startingFrame = artView.superview?.convert(artView.frame, to: nil) ?? CGRect.zero
             self?.selectedArtView = artView
             self?.selectedArtView?.isHidden = true
-            self?.present(destail, animated: false, completion: nil)
+            
+            destail.transitioningDelegate = self                //Set the destination transition delegate
+            destail.art = artView.art
+            self?.present(destail, animated: true, completion: nil)
         }
         
         popTransition.onFinishTransition = { [weak self] in
