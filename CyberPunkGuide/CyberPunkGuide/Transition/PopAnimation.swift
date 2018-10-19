@@ -31,7 +31,9 @@ class PopAnimation : NSObject, UIViewControllerAnimatedTransitioning {
         
         var transitionView = destinationView
         
-        if !advancing { transitionView = sourceView }
+        if !advancing {
+            transitionView = sourceView
+        }
         
         contentView.addSubview(destinationView)
         contentView.addSubview(transitionView)
@@ -58,26 +60,27 @@ class PopAnimation : NSObject, UIViewControllerAnimatedTransitioning {
         
         let damping = min(max(0.1, bounce), 1.0) * duration
         
+        
+        var transformation = transformaScale
+        let centerPoint = CGPoint(x: finalFrame.midX, y: finalFrame.midY)
+        
+        if advancing {
+            transformation = CGAffineTransform.identity
+        }
+        
+        
         UIView.animate(withDuration: duration,
                        delay: 0.0,
                        usingSpringWithDamping: CGFloat(damping),
                        initialSpringVelocity: 0.0,
                        options: .curveEaseIn,
                        animations: {
-                        
-                            if advancing {
-                                transitionView.transform = CGAffineTransform.identity
-                                transitionView.center = CGPoint(x: finalFrame.midX, y: finalFrame.midY)
-                                return
-                            }
-                        
-                            transitionView.transform = transformaScale
-                            transitionView.center = CGPoint(x: finalFrame.midX, y: finalFrame.midY)
-                        
+                            transitionView.transform = transformation
+                            transitionView.center = centerPoint
                         },
                        completion: { [weak self] _ in
-                        if !advancing { self?.onFinishTransition?() }
                             transitionContext.completeTransition(true)
+                            if !advancing { self?.onFinishTransition?()}
                         }
                     )
     }

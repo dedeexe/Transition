@@ -41,7 +41,7 @@ class ViewController: UIViewController {
             self?.popTransition.startingFrame = artView.superview?.convert(artView.frame, to: nil) ?? CGRect.zero
             self?.selectedArtView = artView
             self?.selectedArtView?.isHidden = true
-            self?.present(destail, animated: true, completion: nil)
+            self?.present(destail, animated: false, completion: nil)
         }
         
         popTransition.onFinishTransition = { [weak self] in

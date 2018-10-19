@@ -159,7 +159,10 @@
                         <viewLayoutGuide key="safeArea" id="Auf-9Q-ojO"/>
                     </view>
                     <connections>
+                        <outlet property="bottomConstraint" destination="97E-Lj-M23" id="wRp-Tp-T1i"/>
+                        <outlet property="contentView" destination="DYT-Pj-Aih" id="KAw-m2-Fqq"/>
                         <outlet property="descriptionLabel" destination="LiF-9R-6i0" id="Xtu-xu-S6e"/>
+                        <outlet property="descriptionView" destination="Hht-ff-AMv" id="e9h-LC-dRh"/>
                         <outlet property="imageView" destination="xNU-cu-ECq" id="wZS-Ot-eoF"/>
                         <outlet property="titleLabel" destination="moE-sM-6kQ" id="hmd-lr-3ND"/>
                     </connections>
